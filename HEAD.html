@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ========================================
+       GEARBOX ASSEMBLY LANDING PAGE
+       Applied Industrial Technologies
+       HubSpot Compatible Head Section
+       PASTE INTO: Page Settings → Advanced → Header HTML
+       ======================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Applied® service centers build industrial gearboxes to spec — new component assembly, precision builds, and expert application engineering support at two U.S. locations.">
+  <meta name="keywords" content="gearbox assembly, gearbox build, industrial gearbox, custom gearbox, Applied Industrial Technologies, gearbox manufacturing, new gearbox build">
+  <meta property="og:title" content="Gearbox Assembly Services | Applied Industrial Technologies">
+  <meta property="og:description" content="Applied® service centers provide precision gearbox assembly — build-to-spec, component sourcing, and full testing before delivery.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://6847819.fs1.hubspotusercontent-na1.net/hubfs/6847819/ARS_2022_10_3_0755.jpg">
+  <title>Gearbox Assembly Services | Applied Industrial Technologies</title>
+  <link rel="preconnect" href="https://use.typekit.net">
+  <link rel="stylesheet" href="https://use.typekit.net/yqn6gzn.css">
+
+  <!-- ========================================
+       GLOBAL STYLES & ANIMATIONS
+       ======================================== -->
+  <style>
+    .applied-landing-page * { box-sizing: border-box; font-family: "din-2014", "DIN 2014", "DIN Next", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    .applied-landing-page h1,
+    .applied-landing-page h2,
+    .applied-landing-page h3,
+    .applied-landing-page h4 { font-family: "din-2014", "DIN 2014", "DIN Next", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 800; }
+
+    :root {
+      --applied-teal:        #007b85;
+      --applied-teal-dark:   #005662;
+      --applied-navy:        #1E2F5C;
+      --applied-yellow:      #007b85;
+      --applied-yellow-dark: #005662;
+      --applied-white:       #ffffff;
+      --applied-gray-light:  #f5f5f5;
+      --applied-gray:        #616161;
+    }
+
+    .applied-landing-page {
+      font-family: "din-2014", "DIN 2014", "DIN Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #000000;
+    }
+
+    @keyframes appliedFadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    @keyframes appliedSlideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes appliedSlideLeft {
+      from { opacity: 0; transform: translateX(-30px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes appliedSlideRight {
+      from { opacity: 0; transform: translateX(30px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes appliedHeroFadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    @keyframes appliedHeroSlideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .applied-hero-video-bg {
+      position: absolute; top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover; z-index: 0;
+    }
+    @media (max-width: 768px) {
+      .applied-hero-video-bg { display: none; }
+    }
+
+    /* Overview grid */
+    @media (max-width: 968px) {
+      .gba-overview-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+    }
+
+    /* Capabilities grid */
+    @media (max-width: 960px) {
+      .gba-caps-grid { grid-template-columns: 1fr 1fr !important; }
+    }
+    @media (max-width: 540px) {
+      .gba-caps-grid { grid-template-columns: 1fr !important; }
+    }
+
+    /* Location cards grid */
+    @media (max-width: 768px) {
+      .gba-loc-grid { grid-template-columns: 1fr !important; }
+    }
+
+    /* Process steps */
+    @media (max-width: 768px) {
+      .gba-gallery-frame { height: 320px !important; }
+    }
+    @media (max-width: 480px) {
+      .gba-gallery-frame { height: 240px !important; }
+    }
+
+    /* Location card hover */
+    .gba-location-card { transition: all 0.25s ease; }
+    .gba-location-card:hover {
+      border-color: #007b85 !important;
+      box-shadow: 0 10px 32px rgba(0,123,133,0.15) !important;
+      transform: translateY(-3px);
+    }
+
+    /* Capability card hover */
+    .gba-cap-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .gba-cap-card:hover { transform: translateY(-4px); box-shadow: 0 10px 28px rgba(0,0,0,0.12) !important; }
+
+    /* Mobile: program overview */
+    @media (max-width: 480px) {
+      .applied-program-overview { padding: 50px 20px !important; }
+      .applied-program-overview h2 { font-size: 26px !important; }
+    }
+  </style>
+
+  <!-- ========================================
+       INTERACTIVE MAP STYLES
+       ======================================== -->
+  <style>
+    .applied-map-section { background-color: #f5f5f5; padding: 80px 20px; }
+    .applied-map-container { max-width: 1400px; margin: 0 auto; position: relative; }
+    .applied-map-title { text-align: center; margin-bottom: 48px; }
+    .applied-map-title h2 { font-size: 42px; font-weight: bold; color: #000000; margin: 0 0 16px 0; }
+    .applied-map-title p { font-size: 18px; color: #616161; margin: 0 auto; max-width: 700px; }
+    .applied-map-wrapper { width: 100%; background: #ffffff; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); overflow: hidden; padding: 16px; }
+    .applied-map-wrapper iframe { width: 100%; height: 600px; border-radius: 8px; }
+    .applied-tabs-container { max-width: 100%; margin: 0 0 32px 0; }
+    .applied-split-container { display: grid; grid-template-columns: 60% 40%; gap: 24px; align-items: start; }
+    .applied-map-column { position: sticky; top: 20px; }
+    .applied-cards-column { min-height: 600px; max-height: 800px; overflow-y: auto; }
+    .applied-cards-column::-webkit-scrollbar { width: 8px; }
+    .applied-cards-column::-webkit-scrollbar-track { background: #f5f5f5; border-radius: 4px; }
+    .applied-cards-column::-webkit-scrollbar-thumb { background: #757575; border-radius: 4px; }
+    .applied-tabs { display: flex; gap: 8px; border-bottom: 2px solid #e0e0e0; overflow-x: auto; flex-wrap: wrap; }
+    .applied-tab { background: transparent; border: none; padding: 14px 24px; font-size: 15px; font-weight: 600; color: #616161; cursor: pointer; border-bottom: 3px solid transparent; transition: all 0.3s ease; white-space: nowrap; display: flex; align-items: center; gap: 8px; }
+    .applied-tab:hover { color: #000000; background-color: #f5f5f5; }
+    .applied-tab.active { color: #000000; border-bottom-color: #1E2F5C; }
+    .applied-tab-icon { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+    .applied-tab-icon.rubber  { background-color: #1E2F5C; }
+    .applied-tab-icon.belt    { background-color: #6B46C1; }
+    .applied-tab-icon.hose    { background-color: #007b85; }
+    .applied-tab-icon.gearbox { background-color: #F97316; }
+    .applied-tab-icon.assembly { background-color: #007b85; }
+    .applied-tab-icon.reducer { background-color: #059669; }
+    .applied-tab-icon.fluid   { background-color: #DC2626; }
+    .applied-tab-icon.gearing { background-color: #92400E; }
+    .applied-tab-icon.all     { background: linear-gradient(135deg, #1E2F5C 0%, #007b85 100%); }
+    .applied-tab-content { display: none; }
+    .applied-tab-content.active { display: block; }
+    .applied-tab-content h3 { margin: 0 0 24px 0; color: #000000; font-size: 24px; padding: 24px; background: #ffffff; border-radius: 12px 12px 0 0; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+    .applied-tab-content p { color: #616161; margin-bottom: 24px; padding: 0 24px; }
+    .applied-locations-grid { display: grid; grid-template-columns: 1fr; gap: 12px; padding: 0 24px 24px 24px; }
+    .applied-location-card { padding: 16px; border: 1px solid #e0e0e0; border-radius: 8px; transition: all 0.3s ease; }
+    .applied-location-card:hover { border-color: #1E2F5C; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-2px); }
+    .applied-location-name    { font-size: 16px; font-weight: 600; color: #000000; margin: 0 0 8px 0; }
+    .applied-location-address { font-size: 14px; color: #616161; margin: 0 0 8px 0; line-height: 1.5; }
+    .applied-location-phone   { font-size: 14px; color: #007b85; margin: 0; font-weight: 600; }
+    @media (max-width: 968px) {
+      .applied-split-container { grid-template-columns: 1fr; }
+      .applied-map-column { position: relative; top: 0; }
+      .applied-cards-column { max-height: none; overflow-y: visible; }
+      .applied-map-title h2 { font-size: 32px; }
+      .applied-map-wrapper iframe { height: 400px; }
+      .applied-tab { padding: 12px 16px; font-size: 14px; }
+      .applied-tab-content h3 { font-size: 20px; padding: 16px; }
+      .applied-locations-grid { padding: 0 16px 16px 16px; }
+    }
+  </style>
+
+  <!-- ========================================
+       VIDEO CAROUSEL STYLES
+       ======================================== -->
+  <style>
+    .video-library-section { padding: 80px 0; background: #ffffff; }
+    .video-library-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    .video-library-header { text-align: center; margin-bottom: 3rem; }
+    .video-library-subtitle { font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1.5px; color: #007b85; font-weight: 600; margin-bottom: 0.75rem; }
+    .video-library-title { font-size: 2.5rem; color: #000000; font-weight: 700; margin-bottom: 1rem; line-height: 1.2; }
+    .video-library-description { font-size: 1.1rem; color: #757575; max-width: 700px; margin: 0 auto; line-height: 1.6; }
+    .video-carousel-wrapper { position: relative; margin-top: 2rem; }
+    .video-carousel { display: flex; gap: 1.5rem; overflow-x: auto; overflow-y: hidden; scroll-behavior: smooth; padding: 1rem 0 2rem 0; scrollbar-width: thin; scrollbar-color: #007b85 #f5f5f5; }
+    .video-carousel::-webkit-scrollbar { height: 8px; }
+    .video-carousel::-webkit-scrollbar-track { background: #f5f5f5; border-radius: 10px; }
+    .video-carousel::-webkit-scrollbar-thumb { background: #007b85; border-radius: 10px; }
+    .video-card { flex: 0 0 420px; background: #fafafa; border-radius: 12px; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border: 1px solid #eeeeee; }
+    .video-card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.12); border-color: #007b85; }
+    .video-thumbnail { position: relative; width: 100%; background: #212121; overflow: hidden; }
+    .video-thumbnail .hs-responsive-embed-wrapper { margin: 0 !important; max-width: 100% !important; display: block !important; }
+    .video-info { padding: 1rem; }
+    .video-category { display: inline-block; background: rgba(0,123,133,0.1); color: #007b85; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; padding: 0.3rem 0.65rem; border-radius: 4px; margin-bottom: 0.65rem; }
+    .video-title { font-size: 1.05rem; font-weight: 600; color: #000000; margin-bottom: 0.4rem; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .video-description { font-size: 0.85rem; color: #757575; line-height: 1.4; margin-bottom: 0.75rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .video-duration { font-size: 0.8rem; color: #9e9e9e; display: flex; align-items: center; gap: 0.5rem; }
+    .video-duration::before { content: "▶"; font-size: 0.65rem; }
+    .carousel-nav { display: flex; justify-content: center; gap: 1rem; margin-top: 2rem; }
+    .carousel-btn { width: 50px; height: 50px; background: #ffffff; border: 2px solid #007b85; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease; color: #007b85; font-size: 1.2rem; font-weight: 700; }
+    .carousel-btn:hover { background: #007b85; color: #ffffff; transform: scale(1.1); }
+    .auto-scroll-indicator { text-align: center; margin-top: 1.5rem; font-size: 0.85rem; color: #757575; }
+    .auto-scroll-indicator::before { content: "↔"; margin-right: 0.5rem; color: #007b85; }
+    @media (max-width: 768px) {
+      .video-library-section { padding: 60px 0; }
+      .video-library-title { font-size: 2rem; }
+      .video-card { flex: 0 0 340px; }
+    }
+    @media (max-width: 480px) {
+      .video-card { flex: 0 0 300px; }
+      .video-library-title { font-size: 1.75rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="applied-landing-page">
