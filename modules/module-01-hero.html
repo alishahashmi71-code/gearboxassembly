@@ -1,0 +1,43 @@
+<!-- ========================================
+     MODULE 1: HERO
+     Gearbox Assembly Landing Page
+     Applied Industrial Technologies
+     PASTE INTO: Custom HTML Module in HubSpot Page Editor
+     ======================================== --><div class="applied-landing-page">
+<section style="position: relative; width: 100%; min-height: 650px; display: flex; align-items: center; justify-content: center; padding: 100px 20px; overflow: hidden; background-color: #1a1a1a;"><!-- Video background --> <video width="undefined" height="undefined" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;" id="gba-hero-video" class="applied-hero-video-bg" muted="" loop="loop" playsinline="" poster="https://6847819.fs1.hubspotusercontent-na1.net/hubfs/6847819/Placeholder%20image.png"><source src="https://6847819.fs1.hubspotusercontent-na1.net/hubfs/6847819/Waterjet%20Banner%20(12).mp4" type="video/mp4"></video> <!-- Mobile fallback — hidden on desktop, poster on video handles mobile -->
+<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #1a1a1a; z-index: 0; display: none;">&nbsp;</div>
+<!-- Overlay -->
+<div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(90deg, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.25) 55%, rgba(0,0,0,0.05) 100%); z-index: 1;">&nbsp;</div>
+<!-- Content -->
+<div style="position: relative; z-index: 2; max-width: 1200px; width: 100%; text-align: left; color: #ffffff; padding: 0 30px;"><!-- Logo -->
+<div style="margin-bottom: 20px; opacity: 0; animation: appliedHeroSlideUp 1s ease-out 0.1s forwards;"><a href="https://www.applied.com/" rel="noopener" target="_blank"> <img src="https://6847819.fs1.hubspotusercontent-na1.net/hubfs/6847819/white.png" width="180" height="54" loading="lazy" alt="Applied Industrial Technologies" style="height: auto; width: 180px; display: block; max-width: 100%;"> </a></div>
+<!-- Eyebrow -->
+<p style="font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; color: #007b85; margin: 0 0 16px 0; opacity: 0; animation: appliedHeroSlideUp 1s ease-out 0.2s forwards;"><span style="color: #007b85;">We Are Applied®&nbsp;</span></p>
+<!-- Headline -->
+<h1 style="font-size: 52px; font-weight: 800; line-height: 1.15; color: #ffffff; margin: 0 0 24px 0; opacity: 0; animation: appliedHeroSlideUp 1s ease-out 0.3s forwards;"><span style="font-family: 'din-2014', 'DIN 2014', 'DIN Next', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold;">Gearbox Assembly</span><br><span style="font-family: 'din-2014', 'DIN 2014', 'DIN Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;">&amp; Build Services</span></h1>
+<!-- Subheadline -->
+<p style="font-size: 20px; font-weight: 400; line-height: 1.65; color: rgba(255,255,255,0.92); margin: 0 0 44px 0; max-width: 680px; opacity: 0; animation: appliedHeroSlideUp 1s ease-out 0.4s forwards;">Applied<sup>®</sup> technicians build industrial gearboxes to specification — precision component sourcing, assembly, and full testing to get new equipment into service fast.</p>
+<!-- CTAs -->
+<div style="display: flex; gap: 16px; flex-wrap: wrap; opacity: 0; animation: appliedHeroSlideUp 1s ease-out 0.5s forwards;"><a href="tel:3047630550" style="display: inline-block; background-color: #007b85; color: #ffffff; font-family: 'din-2014', 'DIN 2014', 'DIN Next', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700; text-decoration: none; padding: 16px 40px; border-radius: 6px; border: 2px solid #007b85; transition: all 0.25s ease;" onmouseover="this.style.backgroundColor='#005662'; this.style.borderColor='#005662'; this.style.boxShadow='0 6px 20px rgba(0, 123, 133, 0.50)'; this.style.transform='translateY(-1px)';" onmouseout="this.style.backgroundColor='#007b85'; this.style.borderColor='#007b85'; this.style.boxShadow='none'; this.style.transform='translateY(0)';"> Call Hydra-Gear 24/7 </a> <a href="https://www.applied.com/contact" rel="noopener" target="_blank" style="display: inline-block; background-color: #ffffff; color: #007b85; font-family: 'din-2014', 'DIN 2014', 'DIN Next', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700; text-decoration: none; padding: 16px 40px; border-radius: 6px; border: 2px solid #ffffff; transition: all 0.25s ease;" onmouseover="this.style.backgroundColor='#007b85'; this.style.color='#ffffff'; this.style.borderColor='#007b85'; this.style.boxShadow='0 6px 20px rgba(0, 123, 133, 0.50)'; this.style.transform='translateY(-1px)';" onmouseout="this.style.backgroundColor='#ffffff'; this.style.color='#007b85'; this.style.borderColor='#ffffff'; this.style.boxShadow='none'; this.style.transform='translateY(0)';"> Request Service </a></div>
+</div>
+</section>
+</div>
+<script>
+(function() {
+  'use strict';
+  function initVideo() {
+    var v = document.getElementById('gba-hero-video');
+    if (!v) return;
+    v.muted = true;
+    v.loop  = true;
+    v.play().catch(function() {
+      setTimeout(function() { v.play(); }, 500);
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initVideo);
+  } else {
+    initVideo();
+  }
+})();
+</script>
